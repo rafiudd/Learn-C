@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    interface cobainterface
+	{
+        double add(double x, double y);
+        double min(double x, double y);
+	}
+
+     	 interface kalkulator
+     	  {
+            double cross(double x, double y);
+       	    double devide(double x, double y);
+      	  }
+    
+       	  class  casio : kalkulator, cobainterface
+          {
+            double cross(double x, double y)
+            {
+                return x * y;
+            }
+            double devide(double x, double y)
+            {
+                return x / y;
+            }
+            double add(double x, double y)
+            {
+                return x + y;
+            }
+            double min(double x, double y)
+            {
+                return x - y;
+            }
+        }
+
+    }
+

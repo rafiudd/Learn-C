@@ -1,0 +1,36 @@
+
+using System;
+
+namespace Csharp_Pattern
+{
+    class Program
+    {
+        
+        static void Main()
+        {
+
+
+            int size = 0;
+            int row, column;
+
+            Console.Write("Masukan Ukuran: ");
+            size = Convert.ToInt32(Console.ReadLine());
+
+            // Baris baru.
+            Console.WriteLine();
+
+
+            for (row = 0; row < size; row++)
+            {
+                for (column = 0; column < row; column++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+
+            Console.ReadLine();
+        }
+    }
+}

@@ -1,0 +1,113 @@
+﻿﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            persegi persegi1 = new persegi();
+            Console.WriteLine("Persegi");
+            Console.WriteLine("Masukan Nilai Sisi  :   " );
+            double nini = Convert.ToInt64(Console.ReadLine());
+
+            double nsisi = persegi1.setsisi(nini);
+
+            Console.WriteLine("luas persegi     : {0}", nini * nini);
+            Console.WriteLine("Keliling persegi : {0}",nini*4);
+            Console.ReadLine();
+            Console.Clear();
+            // ////////////////////////////////////////////////////
+            
+             Segitiga segitiga1 = new Segitiga();
+             Console.WriteLine("===================");
+             Console.WriteLine("Segitiga");
+
+             Console.WriteLine("masukan nilai tinggi :");
+             double T = Convert.ToInt64(Console.ReadLine());
+             double ntinggi = segitiga1.settinggi(T);
+
+             Console.WriteLine("masukan nilai alas   :");
+             double A = Convert.ToInt64(Console.ReadLine());
+             double nalas = segitiga1.setalas(T);
+
+             Console.WriteLine("luas Segitiga      : {0}", A * T /2);
+             Console.WriteLine("Keliling Segitiga  : {0}", A * 3);
+             Console.ReadLine();
+             Console.Clear();
+
+            // /////////////////////////////////////////////////////////
+
+             persegipanjang panjang1 = new persegipanjang();
+             Console.WriteLine("===================");
+             Console.WriteLine("Persegi Panjang");
+             Console.WriteLine("masukan nilai Panjang :");
+             double p = Convert.ToInt64(Console.ReadLine());
+             double npanjang = panjang1.setpanjang(T);
+
+             Console.WriteLine("masukan nilai Lebar   :");
+             double l = Convert.ToInt64(Console.ReadLine());
+             double nlebar = panjang1.setlebar(l);
+
+             Console.WriteLine("luas persegi Panjang      : {0}", p * l );
+             Console.WriteLine("Keliling persegi  Panjang : {0}", p*2 + l*2);
+             Console.ReadLine();
+             Console.Clear();
+
+            // /////////////////////////////////////////////////////////////
+
+
+             Trapesium trape1 = new Trapesium();
+             Console.WriteLine("===================");
+             Console.WriteLine("Trapesium");
+             Console.WriteLine("masukan nilai Atas :");
+             double atas = Convert.ToInt64(Console.ReadLine());
+             double natas = trape1.setatas(atas);
+
+             Console.WriteLine("masukan nilai Alas :");
+             double bawah = Convert.ToInt64(Console.ReadLine());
+             double nbawah = trape1.setbawah(bawah);
+
+             Console.WriteLine("masukan nilai Tinggi Trapesium :");
+             double Tringgi = Convert.ToInt64(Console.ReadLine());
+             double ntringgi = trape1.settringgi(Tringgi);
+
+             Console.WriteLine("masukan nilai Sisi samping     :");
+             double Samping = Convert.ToInt64(Console.ReadLine());
+             double nsamping = trape1.setsamping(Samping);
+
+             Console.WriteLine("Luas Trapesium     : {0}", (atas+bawah)*Tringgi/2);
+             Console.WriteLine("Keliling Trapesium : {0}", 2*Samping + atas + bawah);
+             Console.ReadLine();
+             Console.Clear();
+
+            // ///////////////////////////////////////////////////////////////////////
+
+
+             BelahKetupat belah1 = new BelahKetupat();
+             Console.WriteLine("===================");
+             Console.WriteLine("Belahketupat");
+             Console.WriteLine("masukan nilai diagonal 1        :");
+             double diagonala = Convert.ToInt64(Console.ReadLine());
+             double ndiagonal1 = belah1.setdiagonal1(diagonala);
+
+             Console.WriteLine("masukan nilai diagonal 2         :");
+             double diagonalb = Convert.ToInt64(Console.ReadLine());
+             double ndiagonal2 = belah1.setdiagonal2(diagonalb);
+
+             Console.WriteLine("masukan nilai Sisi belah ketupat :");
+             double SisiBelah = Convert.ToInt64(Console.ReadLine());
+             double nsilah = belah1.setsilah(SisiBelah);
+
+             Console.WriteLine("Luas Belah Ketupat  : {0}", diagonala*diagonalb /2);
+             Console.WriteLine("Keliling Belah Ketupat : {0}", SisiBelah *4);
+             Console.ReadLine();   
+             Console.Clear();
+  
+        }   
+    }
+}

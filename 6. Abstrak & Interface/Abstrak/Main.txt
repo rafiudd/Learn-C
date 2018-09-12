@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            casio hitung = new casio();
+            Console.WriteLine("Masukan input pertama :");
+            double a = Convert.ToInt32(Console.ReadLine());
+            double x = a;
+            double b = Convert.ToInt32(Console.ReadLine());
+            double y = b;
+            Console.WriteLine("Hasil Penjumlahan = ");
+            Console.Write(hitung.add(x, y));
+            Console.WriteLine("Hasil Pengurangan = ");
+            Console.Write(hitung.min(x, y));
+            Console.WriteLine("Hasil Perkalian = ");
+            Console.Write(hitung.cross(x, y));
+            Console.WriteLine("Hasil Pembagian = ");
+            Console.Write(hitung.devide(x, y));
+            
+
+
+        }
+    }
+}

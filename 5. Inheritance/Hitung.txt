@@ -1,0 +1,293 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InheritanceBD
+{
+    class Jajar : BD
+    {
+        protected int sisi;
+        protected int panjang, lebar, alas, tinggi, miring, di, dii, a, b, c, d;
+        Program home = new Program();
+        public override double LK()
+        {
+            Console.Clear();
+            Console.Write("Masukan Alas : ");
+            alas = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Tinggi : ");
+            tinggi = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Sisi Miring : ");
+            miring = Convert.ToInt16(Console.ReadLine());
+           // setJajar(alasj, tinggij, miringj);
+            Console.WriteLine("Luas Jajar Genjang Anda : " + LJ());
+            Console.WriteLine("Keliling Jajar Genjang Anda : " + KJ());
+            string tanyas = Convert.ToString(Console.ReadLine());
+            if (tanyas == "Y" || tanyas == "y")
+            {
+                LK();
+            }
+            else
+            {
+                home.menu();
+            }
+            return base.LK();
+        }
+        public int LJ()
+        {
+            int luas = alas * tinggi;
+            return luas;
+        }
+        public int KJ()
+        {
+            int keliling = alas * miring;
+            return keliling;
+        }
+    }
+
+
+class Layang : BD
+    {
+        private int sisi;
+        private int panjang, lebar, alas, tinggi, miring, di, dii, a, b, c, d;
+        Program home = new Program();
+        public override double LK()
+        {
+            Console.Clear();
+            Console.Write("Masukan Diagonal 1 : ");
+             di = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Diagonal 2 : ");
+             dii = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Sisi A : ");
+             a = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Sisi B : ");
+             b = Convert.ToInt16(Console.ReadLine());
+            //setLayang(di, di, a, b);
+            Console.WriteLine("Luas Jajar Genjang Anda : " + LL());
+            Console.WriteLine("Keliling Jajar Genjang Anda : " + KL());
+            string tanyas = Convert.ToString(Console.ReadLine());
+            if (tanyas == "Y" || tanyas == "y")
+            {
+                LK();
+            }
+            else
+            {
+                home.menu();
+            }
+            return base.LK();
+        }
+        public int LL()
+        {
+            int luas = di * dii / 2;
+            return luas;
+
+        }
+        public int KL()
+        {
+            int keliling = 2 * (a + b);
+            // KL();
+            return keliling;
+        }
+    }
+
+
+class Persegi : BD
+    {
+        private int sisi;
+        Program home = new Program();
+        public override double LK()
+        {
+            Console.Clear();
+            Console.Write("Masukan Sisi : ");
+             sisi = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Luas Persegi Anda : " + LP());
+            Console.WriteLine("Keliling Persegi Anda : " + KP());
+            string tanyas = Convert.ToString(Console.ReadLine());
+            if (tanyas == "Y" || tanyas == "y")
+            {
+                LK();
+            }
+            else
+            {
+                home.menu();
+            }
+            return base.LK();
+        }
+
+        public int KP()
+        {
+            int keliling = 4 * sisi;
+            return keliling;
+        }
+        public int LP()
+        {
+            int luas = sisi * sisi;
+            return luas;
+        }
+    }
+
+
+class PP : BD
+    {
+        int panjang, lebar;
+        Program home = new Program();
+        public override double LK()
+        {
+            Console.Clear();
+            Console.Write("Masukan Panjang : ");
+            panjang = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Lebar : ");
+            lebar = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Luas Persegi Panjang Anda : " + LPP());
+            Console.WriteLine("Keliling Persegi Panjang Anda : " + KPP());
+            string tanyas = Convert.ToString(Console.ReadLine());
+            if (tanyas == "Y" || tanyas == "y")
+            {
+                LK();
+            }
+            else
+            {
+                home.menu();
+            }
+          //  Console.ReadLine();
+            return base.LK();
+        }
+        public int LPP()
+        {
+            int luas = panjang * lebar;
+            return luas;
+        }
+        public int KPP()
+        {
+            int keliling = 2 * (panjang + lebar);
+            return keliling;
+        }
+    }
+
+class Segitiga : BD
+    {
+        private int sisi;
+        private int panjang, lebar, alas, tinggi, miring, di, dii, a, b, c, d;
+        Program home = new Program();
+        public override double LK()
+        {
+            Console.Clear();
+            Console.Write("Masukan Alas : ");
+             alas = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Tinggi : ");
+            tinggi = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Sisi Miring : ");
+            miring = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Sisi B : ");
+             b = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Sisi C : ");
+             c = Convert.ToInt16(Console.ReadLine());
+          
+            Console.WriteLine("Luas Segitiga Anda : " + LS());
+            Console.WriteLine("Keliling Segitiga Anda : " + KS());
+            string tanyas = Convert.ToString(Console.ReadLine());
+            if (tanyas == "Y" || tanyas == "y")
+            {
+                LK();
+            }
+            else
+            {
+                home.menu();
+            }
+            return base.LK();
+        }
+        public int LS()
+        {
+            int luas = alas * tinggi / 2;
+            return luas;
+
+        }
+        public int KS()
+        {
+            int keliling = alas + b + c;
+            return keliling;
+        }
+    }
+
+ class Trapes : BD
+    {
+        private int sisi;
+        private int panjang, lebar, alas, tinggi, miring, di, dii, a, b, c, d;
+        Program home = new Program();
+        public override double LK()
+        {
+            Console.Clear();
+            Console.Write("Masukan Sisi A : ");
+           a = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Sisi B : ");
+            b = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Sisi C : ");
+            c = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Sisi D : ");
+           d = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Tinggi : ");
+           tinggi = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Luas Trapesium Anda : " + LT());
+            Console.WriteLine("Keliling Trapesium Anda : " + KT());
+            string tanyas = Convert.ToString(Console.ReadLine());
+            if (tanyas == "Y" || tanyas == "y")
+            {
+                LK();
+            }
+            else
+            {
+                home.menu();
+            }
+            return base.LK();
+        }
+        public int LT()
+        {
+            int luas = (a + c) * tinggi / 2;
+            return luas;
+        }
+        public int KT()
+        {
+            int keliling = a + b + c + d;
+            return keliling;
+
+        }
+    }
+
+    class BK : BD
+    {
+        private int sisi;
+        private int panjang, lebar, alas, tinggi, miring, di, dii, a, b, c, d;
+        public override double LK()
+        {
+            Console.Clear();
+            Console.Write("Masukan Diagonal 1 : ");
+            di = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Diagonal 2 : ");
+            dii = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Masukan Sisi : ");
+            sisi = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Luas Persegi Anda : " + LP());
+            Console.WriteLine("Keliling Persegi Anda : " + KP());
+
+            return base.LK();
+        }
+
+        public int LP() {
+            int luas = di * dii / 2;
+            return luas;
+        }
+        public int KP() {
+            int keliling = sisi * 4;
+            return keliling;
+        }
+    }
+
+
+
+
+
+
+
+
+}

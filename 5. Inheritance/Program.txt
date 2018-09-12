@@ -1,0 +1,71 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InheritanceBD
+{
+    class Program
+    {
+        public void menu()
+        {
+             Persegi persegi = new Persegi();
+             PP pp = new PP();
+             BK bk = new BK();
+             Jajar ja = new Jajar();
+             Layang ly = new Layang();
+             Segitiga segitiga = new Segitiga();
+             Trapes trapes = new Trapes();
+             Console.Clear();
+             Console.WriteLine("=========================================");
+             Console.WriteLine("Pilih Bangun Datar Anda : ");
+             Console.WriteLine("1. Persegi");
+             Console.WriteLine("2. Persegi Panjang");
+             Console.WriteLine("3. Segitiga");
+             Console.WriteLine("4. Jajar Genjang");
+             Console.WriteLine("5. Layang-Layang");
+             Console.WriteLine("6. Trapesium");
+             Console.WriteLine("7. Belah Ketupat");
+             Console.WriteLine("Masukan Pilihan Anda : ");
+             int pilih = Convert.ToInt16(Console.ReadLine());
+             if (pilih == 1)
+             {
+                 persegi.LK();
+             }
+             if (pilih == 2)
+             {
+                 pp.LK();
+             }
+             if (pilih == 3)
+             {
+                 segitiga.LK();
+             }
+             if (pilih == 4)
+             {
+                 ja.LK();
+             }
+             if (pilih == 5)
+             {
+                 ly.LK();
+             }
+             if (pilih == 6)
+             {
+                 trapes.LK();
+
+             }
+             if (pilih == 7)
+             {
+                 bk.LK();
+
+             }
+
+        }
+        static void Main(string[] args)
+        {
+            Program home = new Program();
+
+            home.menu();
+        }
+    }
+}

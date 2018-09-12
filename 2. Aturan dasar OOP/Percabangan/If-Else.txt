@@ -1,0 +1,167 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int pilihan;
+            Console.WriteLine("1.segitiga");
+            Console.WriteLine("2.persegi");
+            Console.WriteLine("3.persegi panjang");
+            Console.WriteLine("4.jajar genjang");
+            Console.WriteLine("5.trapesium");
+            Console.WriteLine("6.belah ketupat");
+            Console.WriteLine("7.layang-layang");
+            Console.Write("Masukkan Pilihan Anda    : ");
+            String menu = Console.ReadLine();
+            int.TryParse(menu, out pilihan);
+            
+            if (pilihan==1)
+            {
+            
+            Console.WriteLine("Luas dan Keliling Segitiga");
+            Console.WriteLine();
+            Console.Write("Input Alas            : ");
+            double a = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Input tinggi          : ");
+            double b = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Input Sisi Miring     : ");
+            double c = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("========================");
+            Console.WriteLine("Luas Segitiga        : {0}", a * b / 2);
+            Console.WriteLine("Keliling Segitiga    : {0}", c + c + a);
+            Console.ReadLine();
+
+            Console.Clear();
+
+            }
+            else if(pilihan==2)
+            {
+            Console.WriteLine("Luas dan Keliling Persegi");
+            Console.WriteLine();
+            Console.Write("Input Sisi           : ");
+            double s = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("=======================");
+            Console.WriteLine("Luas Persegi         : {0}", s * s);
+            Console.WriteLine("Keliling Persegi     : {0}", 4 * s);
+            Console.ReadLine();
+
+            Console.Clear();
+            }
+            //persegi panjang
+            else if(pilihan==3)
+            {
+            Console.WriteLine("Luas dan Keliling Persegi Panjang");
+            Console.WriteLine();
+            Console.Write("Input Lebar          : ");
+            double d = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Panjang        : ");
+            double e = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("======================");
+            Console.WriteLine("Luas Persegi Panjang     : {0}", d * e);
+            Console.WriteLine("Keliling Persegi Panjang : {0}", 2 * (d + e));
+            Console.ReadLine();
+
+            Console.Clear();
+
+            }
+            //jajar genjang
+            else if(pilihan==4)
+            {
+            Console.WriteLine("Luas dan Keliling Jajar Genjang");
+            Console.WriteLine();
+            Console.Write("Input Sisi Miring        : ");
+            double f = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Sisi Alas          : ");
+            double g = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Tinggi             : ");
+            double h = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("=====================");
+            Console.WriteLine("Luas Jajar Genjang       : {0}", g * h);
+            Console.WriteLine("Keliling Jajar Gejang    : {0}", 2 * (g + f));
+            Console.ReadLine();
+
+            Console.Clear();
+            }
+            else if(pilihan==5)
+            {
+            Console.WriteLine("Luas dan Keliling Trapesium");
+            Console.WriteLine();
+            Console.Write("Input Sisi Atas          : ");
+            double i = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Sisi Bawah         : ");
+            double j = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Tinggi             : ");
+            double k = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Sisi Miring        : ");
+            double ssm = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("==============================");
+            Console.WriteLine("Luas Trapesium       : {0}", ((i + j) / 2) * k);
+            Console.WriteLine("Kelililng Trapesium  : {0}", (i + j + (2 * ssm)));
+            Console.ReadLine();
+
+            Console.Clear();
+            }
+            else if(pilihan==6)
+            {
+            Console.WriteLine("Luas dan Keliling Belah Ketupat");
+            Console.WriteLine();
+            Console.Write("Input Diagonal 1             : ");
+            double u = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Diagonal 2             : ");
+            double v = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Sisi                   : ");
+            double w = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("=============================");
+            Console.WriteLine("Luas Belah Ketupat       : {0}", 1 / 2 * u * v);
+            Console.WriteLine("Keliling Belah Ketupat   : {0}", 4 * w);
+            Console.ReadLine();
+
+            Console.Clear();
+            }
+            else if(pilihan==7)
+            {
+            Console.WriteLine("Luas dan Keliling Layang-layang");
+            Console.WriteLine();
+            Console.Write("Input Diagonal 1            : ");
+            double l = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Diagonal 2            : ");
+            double m = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Sisi A                : ");
+            double n = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Sisi B                : ");
+            double o = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("=============================");
+            Console.WriteLine("Luas Layang-Layang      : {0}", 1 / 2 * l * m);
+            Console.WriteLine("Keliling Layang-Layang  : {0}", 2 * (n + o));
+            Console.ReadLine();
+
+            Console.Clear();
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication25
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] nama = new string[5]
+            {
+                "Selamat",
+                "Pagi",
+                "Siang",
+                "Malam",
+                "Aku"
+            };
+
+            // length
+            Console.WriteLine(nama[0].Length);
+            Console.ReadLine();
+
+            // index of
+            Console.WriteLine(nama[0].IndexOf('a'));
+            Console.ReadLine();
+
+            // insert
+            Console.WriteLine(nama[0].Insert(1,"a"));//index keberapa, mao masokna apa
+            Console.ReadLine();
+
+            // replace
+            Console.WriteLine(nama[3].Replace("ang","mba"));
+            Console.ReadLine();
+
+            // remove
+            Console.WriteLine(nama[2].Remove(2));//dar index berapa ke berapa yoh
+            Console.ReadLine();
+
+            // concatanate ==>penggabungan index
+            Console.WriteLine(string.Concat(nama[1]+nama[2]+nama[5]));
+            Console.ReadLine();
+
+            // join
+            Console.WriteLine(string.Join(" ",nama[1],nama[2],nama[5]));
+            Console.ReadLine();
+
+        
+            
+        }
+    }
+}

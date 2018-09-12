@@ -1,0 +1,97 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class segitiga
+    {
+        static void Main(string[] args)
+        {
+            menu:
+            int pilihan;
+            Console.WriteLine("1. Segitiga");
+            Console.WriteLine("2. Persegi");
+            Console.WriteLine("3. Persegi Panjang");
+            Console.WriteLine("4. Jajargenjang");
+
+            Console.Write("Masukan pilihan anda : ");
+            string menu = Console.ReadLine();
+            int.TryParse(menu, out pilihan);
+
+            if(pilihan == 1){
+            Console.WriteLine("LUAS DAN KELILING SEGITIGA");
+            Console.WriteLine();
+            Console.Write("Input Alas        : ");
+            double x = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Tinggi      : ");
+            double y = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Sisi miring : ");
+            double m = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("=======================");
+            Console.WriteLine("Luas Segitiga     : {0}", x * y / 2);
+            Console.WriteLine("Keliling Segitiga : {0}", m + m + x);
+            Console.ReadLine();
+            goto menu;
+            ;}
+
+
+            else if(pilihan == 2){
+            Console.WriteLine("LUAS DAN KELILING PERSEGI");
+            Console.WriteLine();
+            Console.Write("Input Sisi        : ");
+            double s = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("=======================");
+            Console.WriteLine("Luas Persegi      : {0}", s * s);
+            Console.WriteLine("Keliling Persegi  : {0}", 2 * s * s);
+            Console.ReadLine();
+            goto menu;
+            ;}
+
+            else if(pilihan == 3){
+            Console.WriteLine("LUAS DAN KELILING PERSEGI PANJANG");
+            Console.WriteLine();
+            Console.Write("Input Sisi Pendek         : ");
+            double sk = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Sisi Panjang        : ");
+            double sj = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("================================");
+            Console.WriteLine("Luas Persegi Panjang      : {0}", sk * sj);
+            Console.WriteLine("Keliling Persegi Panjang  : {0}", 2 * (sk + sj));
+            Console.ReadLine();
+            goto menu;
+            ;}
+
+            else if(pilihan == 4){
+            Console.WriteLine("LUAS DAN KELILING JAJARGENJANG");
+            Console.WriteLine();
+            Console.Write("Input Sisi Miring      : ");
+            double sm = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Sisi Alas        : ");
+            double sa = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Input Tinggi           : ");
+            double tj = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("=============================");
+            Console.WriteLine("Luas Jajargenjang      : {0}", sa * tj);
+            Console.WriteLine("Keliling Jajargenjang  : {0}", 2 * (sa + sm));
+            Console.ReadLine();
+            goto menu;
+            ;}
+            else if(pilihan>4){
+                Console.WriteLine("Angka yang anda masukan salah");
+            }
+        }
+    }
+}
+// Created by Rayhan RafiudDarojat /33

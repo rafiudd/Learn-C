@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+          
+            for (int hitung = 1;hitung <= 30;hitung = hitung *3)
+            
+            {
+                Console.WriteLine(hitung + "...");
+             
+            }
+          
+            Console.ReadKey();
+        }
+    }
+}

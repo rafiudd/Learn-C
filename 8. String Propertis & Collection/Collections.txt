@@ -1,0 +1,40 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication99
+{
+    class Rogram
+    {
+        static void Main(string[] args)
+        {
+            ArrayList sales = new ArrayList();
+
+            Console.WriteLine(sales.Capacity);
+            sales.Add("halo");            
+            Console.WriteLine(sales.Capacity);
+            sales.Add("ppp");            
+            Console.WriteLine(sales.Capacity);
+            sales.Add("zzz");            
+            Console.WriteLine(sales.Capacity);
+            sales.Add("aaa");            
+            Console.WriteLine(sales.Capacity);
+            sales.Add("ssss");            
+            Console.WriteLine(sales.Capacity);
+
+            sales.Remove("halo");
+            sales.Insert(1,"hahaha");
+            sales.RemoveAt(2);
+
+            foreach(object obj in sales)
+            {
+                Console.Write(obj+" ");
+            }
+            Console.ReadLine();
+
+        }
+    }
+}

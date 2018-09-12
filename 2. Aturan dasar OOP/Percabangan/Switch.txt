@@ -1,0 +1,87 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Aplikasi Aritmatika Sederhana");
+            Console.Write("\ncari luas&keliling");
+            Console.Write("\n1.Segitiga \n2.Persegi \n3.Trapesium \n4.Persegi Panjang ");
+            Console.Write("Masukan Pilihan Anda = ");
+            int kode =int.Parse(Console.ReadLine());
+            switch(kode)
+            {
+                case '1':
+                Console.Write("luas & keliling segitiga");
+                Console.Write("\nmasukan alas = ");
+                int a = Convert.ToInt32(Console.ReadLine());
+                Console.Write("masukan tinggi = ");
+                int t = Convert.ToInt32(Console.ReadLine());
+                Console.Write("masukan sisi miring = ");
+                int sm = Convert.ToInt32(Console.ReadLine());
+                int luas = (a * t) / 2;
+                int keliling = (2 * sm) + a;
+                Console.WriteLine("luas segitiga = " + luas);
+                Console.WriteLine("keliling segitiga = " + keliling);
+                Console.ReadLine();
+                Console.Clear();
+                break;
+            
+                case '2':
+                Console.Write("luas & keliling persegi");
+                Console.Write("\nmasukan sisi = ");
+                int sisi = Convert.ToInt32(Console.ReadLine());
+                int luaspersegi = (sisi * sisi);
+                int kelilingpersegi = (4 * sisi);
+                Console.WriteLine("luas persegi = " + luaspersegi);
+                Console.WriteLine("keliling persegi = " + kelilingpersegi);
+                Console.ReadLine();
+                Console.Clear();
+                break;
+
+                case'3':
+		Console.Write("luas & keliling trapesium");
+                Console.Write("\nmasukan alas = ");
+                int alas = Convert.ToInt32(Console.ReadLine());
+                Console.Write("masukan tinggi = ");
+                int tinggi = Convert.ToInt32(Console.ReadLine());
+                Console.Write("masukan sisi atas = ");
+                int sisiatas = Convert.ToInt32(Console.ReadLine());
+                Console.Write("masukan sisi bawah = ");
+                int sisibawah = Convert.ToInt32(Console.ReadLine());
+                Console.Write("masukan sisi samping = ");
+                int sisisamping = Convert.ToInt32(Console.ReadLine());
+                int luastrapesium = (sisiatas + sisibawah) * tinggi / 2;
+                int kelilingtrapesium = (2 * sisisamping) + sisiatas + sisibawah;
+                Console.WriteLine("luas trapesium = " + luastrapesium);
+                Console.WriteLine("keliling trapesium = " + kelilingtrapesium);
+                Console.ReadLine();
+                Console.Clear();
+                break;
+                
+                case'4':
+                Console.Write("luas & keliling persegi panjang");
+                Console.Write("\nmasukan lebar = ");
+                int lebar = Convert.ToInt32(Console.ReadLine());
+                Console.Write("masukan panjang = ");
+                int panjang = Convert.ToInt32(Console.ReadLine());
+                int luaspersegipanjang = (panjang * lebar);
+                int kelilingpersegipanjang = 2 * (panjang + lebar);
+                Console.WriteLine("luas persegi panjang = " + luaspersegipanjang);
+                Console.WriteLine("keliling persegi panjang = " + kelilingpersegipanjang);
+                Console.ReadLine();
+                Console.Clear();
+
+
+            }
+        }
+    }
+}

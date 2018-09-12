@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            BD bd = new BD();
+            Console.WriteLine("Pilihan ");
+            Console.WriteLine("1. Segitiga");
+            Console.WriteLine("2. Persegi");
+            Console.WriteLine("3. Persegi Panjang");
+            Console.WriteLine("4. Jajargenjang");
+            Console.WriteLine("5. Trapesium");
+            Console.WriteLine("6. Layang - Layang");
+
+
+
+            double a = Convert.ToInt64(Console.ReadLine());
+            if(a == 1 ){
+            bd.segitiga();
+            }
+            if (a == 2) {
+                bd.persegi();
+            }
+            if (a == 3) {
+                bd.persegip();
+            }    
+            if (a == 4){
+                bd.jajargenjang();
+            }
+            if (a == 5){
+                bd.trapesium();
+            }
+            if (a == 6){
+                bd.layang();
+            }
+        }      
+        
+    }
+}

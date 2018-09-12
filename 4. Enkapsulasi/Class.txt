@@ -1,0 +1,175 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class persegi
+    {
+        private double sisi;
+
+        public double getsisi()
+        {
+            return sisi;
+        }
+        public double setsisi(double nsisi)
+        {
+            sisi += nsisi;
+            return nsisi;
+        }
+
+    }
+
+    class Segitiga
+    {
+        private double tinggi;
+        private double alas;
+
+        public double gettinggi()
+        {
+            return tinggi;
+        }
+
+        public double getalas()
+        {
+            return alas;
+        }
+
+        public double settinggi(double ntinggi)
+        {
+            tinggi += ntinggi;
+            return ntinggi;
+        }
+
+
+        public double setalas(double nalas)
+        {
+            alas += nalas;
+            return nalas;
+        }
+    }
+    
+    }
+
+
+    class Trapesium
+    {
+         private double atas;
+         private double bawah;
+         private double tringgi;
+         private double samping;
+
+        public double getatas()
+        {
+            return atas;
+        }
+
+        public double getbawah()
+        {
+            return bawah;
+        }
+        public double gettringgi()
+        {
+            return tringgi;
+        }
+        public double getsamping()
+        {
+            return samping;
+        }
+
+
+        public double setatas(double natas)
+        {
+            atas += natas;
+            return natas;
+        }
+
+
+        public double setbawah(double nbawah)
+        {
+            bawah += nbawah;
+            return nbawah;
+        }
+        public double settringgi(double ntringgi)
+        {
+            tringgi += ntringgi;
+            return ntringgi;
+        }
+        public double setsamping(double nsamping)
+        {
+            samping += nsamping;
+            return nsamping;
+        }
+    }
+
+    class persegipanjang
+    {
+        private double panjang;
+        private double l;
+
+        public double getpanjang()
+        {
+            return panjang;
+        }
+
+        public double getlebar()
+        {
+            return l;
+        }
+
+        public double setpanjang(double npanjang)
+        {
+            panjang += npanjang;
+            return npanjang;
+        }
+
+
+        public double setlebar(double nlebar)
+        {
+            l += nlebar;
+            return nlebar;
+        }
+        }
+
+    class BelahKetupat
+    {
+        private double diagonal1;
+        private double diagonal2;
+        private double silah;
+
+        public double getdiagonal1()
+        {
+            return diagonal1 ;
+        }
+
+        public double getdiagona2()
+        {
+            return diagonal2;
+        }
+        public double getsilah()
+        {
+            return silah;
+        }
+
+        public double setdiagonal1(double ndiagonal1)
+        {
+            diagonal1 += ndiagonal1;
+            return ndiagonal1;
+        }
+
+
+        public double setdiagonal2(double ndiagonal2)
+        {
+            diagonal2 += ndiagonal2;
+            return ndiagonal2;
+        }
+        public double setsilah(double nsilah)
+        {
+            silah += nsilah;
+            return nsilah;
+        }
+    }
+
+

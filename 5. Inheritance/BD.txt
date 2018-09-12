@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InheritanceBD
+{
+    class BD
+    {
+        double luas;
+        double keliling;
+        int a, b;
+        public virtual double LK()
+        {
+            return luas;
+        }
+    }
+}
